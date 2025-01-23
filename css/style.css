@@ -143,8 +143,8 @@ ul {
 }
 
 .btn {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 700;
     padding: 12px 35px;
     color: white;
     border-radius: 40px;
@@ -157,7 +157,7 @@ ul {
 }
 
 .btn:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .shadow-dark {
@@ -347,9 +347,51 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
+.home-info .social-media {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.home-info .social-media .btn-social-media i.fa-brands{
+    padding: 12px 13px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    background-color: var(--skin-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.home-info .social-media .btn-social-media:hover i {
+    transform: scale(1.2);
+}
+
+.home-info .social-media .btn-social-media:hover .fa-whatsapp {
+    background-color: hsla(145, 60%, 50%);
+    box-shadow: 0 5px 22px hsla(145, 60%, 50%, 1);
+}
+
+.home-info .social-media .btn-social-media:hover .fa-linkedin-in {
+    background-color: hsla(201, 89%, 36%);
+    box-shadow: 0 8px 32px hsla(201, 89%, 36%, 1);
+}
+
+.home-info .social-media .btn-social-media:hover .fa-github {
+    background-color: hsla(262, 28%, 45%);
+    box-shadow: 0 8px 32px  hsla(262, 28%, 45%, 1);
+}
+
+.home-info .home-button {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+/*
 .home-info .btn {
     margin-top: 70px;
 }
+*/
 
 .home .home-img {
     flex: 0 0 40%;
