@@ -101,7 +101,15 @@ ul {
     transition: all 0.3s ease;
 }
 
+/*
+.hidden {
+    display: none !important;
+}
 
+.section.contact {
+    z-index: 1;
+}
+*/
 
 .section.back-section {
     z-index: 1;
@@ -818,7 +826,7 @@ h3.my-profession {
 }
   
 
-/*============ Contact ============*/
+/*============ CONTACT ============*/
 .contact-title {
     color: var(--skin-color);
     text-align: center;
@@ -834,39 +842,82 @@ h3.my-profession {
     margin-bottom: 6rem;
 }
 
-.contact .contact-info-item {
+/*============ contact-item ============*/
+.contact .contact-item {
+    margin-bottom: 3rem;
     flex: 0 0 25%;
-    max-width: 25%;
+    max-width: 40%;
+}
+
+.contact .contact-item .contact-item-inner {
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 2rem;
+    padding: 3rem 1.5rem;
     text-align: center;
-    margin-bottom: 6rem;
-
+    transition: all .3s ease-in-out;
 }
 
-.contact .contact-info-item .icon {
-    display: inline-block;
+.contact .contact-item .contact-item-inner:hover {
+    cursor: pointer;
+    box-shadow: 0rem 0rem 0rem .2rem var(--skin-color);
 }
 
-.contact .contact-info-item .icon .fa,
-.contact .contact-info-item .icon .fa-brands {
-    font-size: 3.5rem;
+.contact .contact-item .contact-item-inner i {
+    height: 6rem;
+    width: 6rem;
+    font-size: 4rem;
+    line-height: 6rem;
+    border-radius: 50%;
     color: var(--skin-color);
+    display: block;
+    margin: 0 auto 3rem ;
+    text-align: center; 
+    transition: all .3s ease-in-out;    
 }
 
-.contact .contact-info-item h4 {
-    font-size: 1.8rem;
-    font-weight: 700;
+.contact .contact-item .contact-item-inner:hover i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+
+.contact .contact-item .contact-item-inner:hover i.fa-whatsapp {
+    background-color: hsla(145, 60%, 50%);
+    box-shadow: 0 .8rem 3.2rem hsla(145, 60%, 50%, 1);
+}
+
+.contact .contact-item .contact-item-inner:hover i.fa-linkedin-in {
+    background-color: hsla(201, 89%, 36%);
+    box-shadow: 0 .8rem 3.2rem hsla(201, 89%, 36%, 1);
+}
+
+.contact .contact-item .contact-item-inner:hover i.fa-github {
+    background-color: hsla(262, 28%, 45%);
+    box-shadow: 0 .8rem 3.2rem hsla(262, 28%, 45%, 1);
+}
+
+.contact .contact-item .contact-item-inner:hover i.fa-envelope {
+    background-color: hsla(0, 100%, 50%, 1);
+    box-shadow: 0 .8rem 3.2rem hsla(0, 100%, 50%, 1);
+}
+
+
+.contact .contact-item .contact-item-inner h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
     color: var(--text-black-900);
+    font-weight: 700;
     text-transform: capitalize;
-    margin: 1.5rem 0 .5rem;
 }
 
-.contact .contact-info-item p {
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-    font-weight: 400;
+.contact .contact-item .contact-item-inner p {
+    font-size: 15px;
     color: var(--text-black-700);
+    line-height: 20px;
 }
 
+/*============ Contact Form ============*/
 .contact .contact-form {
     flex: 0 0 100%;
     max-width: 100%;
@@ -898,7 +949,6 @@ h3.my-profession {
     transition: all 0.3s ease;
 
     background: var(--bg-shape);
-
 }
 
 .contact .contact-form .form-item .form-control:focus {
@@ -908,6 +958,7 @@ h3.my-profession {
 
 .contact .contact-form .form-item textarea.form-control {
     height: 14rem;
+    resize: none;
 }
 
 .contact .contact-form .btn {
@@ -948,9 +999,9 @@ h3.my-profession {
 }
 
 @media (max-width: 991px) {
-    .contact .contact-info-item {
+    .contact .contact-item {
         flex: 0 0 50%;
-        max-width: 50%;
+        max-width: 50%;    
     }
 
     .home .home-info {
@@ -980,7 +1031,7 @@ h3.my-profession {
     .about .about-content .skills,
     .about .about-content .education,
     .project .project-item,
-    .contact .contact-info-item,
+    .contact .contact-item,
     .contact .contact-form .col-6 {        
         flex: 0 0 100%;
         max-width: 100%;
@@ -1046,3 +1097,18 @@ h3.my-profession {
     height: 35rem;
     border-radius: 50%;
 }
+
+/*-----------------------*/
+
+
+/*
+    <div class="contact-info-item padd-15">
+        <a href="http://wa.me/5521968695409" class="contact-item" target="_blank"  rel="noopener noreferrer">
+            <div class="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h4>Telefone</h4>
+            <p>+55 (21) 96869-5409</p>
+        </a>                            
+    </div>
+*/

@@ -67,7 +67,7 @@
         <!--============ Main Content Start ============-->
         <div class="main-content">
             <!--============ Home Section Start ============-->
-            <section class="home active section" id="home">
+            <section class="home active section hidden" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -118,7 +118,7 @@
             <!--============ Home Section End ============-->
             
             <!--============ About Section Start ============-->
-            <section class="about section" id="about">
+            <section class="about section hidden" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -230,7 +230,7 @@
             <!--============ About Section End ============-->
 
             <!--============ Project Section Start ============-->
-            <section class="project section " id="project">
+            <section class="project section hidden" id="project">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -393,41 +393,53 @@
 
                     <div class="row">
                         <!--============ Contact info item start ============-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <i class="fa-brands fa-square-whatsapp"></i>
-                            </div>
-                            <h4>Telefone</h4>
-                            <p>+55 (21) 96869-5409</p>
+                        <div class="contact-item padd-15">
+                            <a href="http://wa.me/5521968695409"  target="_blank"  rel="noopener noreferrer">
+                                <div class="contact-item-inner" >
+                                    <div class="container-icon">
+                                        <i class="icon fa-brands fa-whatsapp "></i>
+                                    </div>
+                                    <h4>telefone</h4>
+                                    <p>(21) 96869-5409</p>
+                                </div>                         
+                            </a>   
                         </div>
-                        <!--============ Contact info item end ============-->
 
-                        <!--============ Contact info item start ============-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </div>
-                            <h4>Linkedin</h4>
-                            <p>linkedin.com/in/leonardo-sl</p>
+                        <div class="contact-item padd-15">
+                            <a href="https://www.linkedin.com/in/leonardo-sl/"  target="_blank"  rel="noopener noreferrer">
+                                <div class="contact-item-inner" >
+                                    <div class="container-icon">
+                                        <i class="icon fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                    <h4>linkedin</h4>
+                                    <p>/in/leonardo-sl</p>
+                                </div>                         
+                            </a>   
                         </div>
-                        <!--============ Contact info item end ============-->
 
-                        <!--============ Contact info item start ============-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>Email</h4>
-                            <p>leonardo.sl.dev@gmail.com</p>
+                        <div class="contact-item padd-15">
+                            <a href="https://github.com/leonardoxp9d"  target="_blank"  rel="noopener noreferrer">
+                                <div class="contact-item-inner" >
+                                    <div class="container-icon">
+                                        <i class="icon fa-brands fa-github"></i>
+                                    </div>
+                                    <h4>github</h4>
+                                    <p>/leonardoxp9d</p>
+                                </div>                         
+                            </a>   
                         </div>
-                        <!--============ Contact info item end ============-->
 
-                        <!--============ Contact info item start ============-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon">
-                                <i class="fa-brands fa-github"></i>
-                            </div>
-                            <h4>Github</h4>
-                            <p>github.com/leonardoxp9d</p>
-                        </div>
+                        <div class="contact-item padd-15">
+                            <a href="mailto:leonardo.sl.dev@gmail.com"  target="_blank"  rel="noopener noreferrer">
+                                <div class="contact-item-inner" >
+                                    <div class="container-icon">
+                                        <i class="icon fa-solid fa-envelope"></i>
+                                    </div>
+                                    <h4>email</h4>
+                                    <p>leonardo.sl.dev@gmail</p>
+                                </div>                         
+                            </a>   
+                        </div>                        
                         <!--============ Contact info item end ============-->
                     </div>
 
@@ -462,7 +474,7 @@
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="message" qid="" placeholder="Mensagem" required></textarea>
+                                        <textarea class="form-control textarea" name="message" qid="" placeholder="Mensagem" required></textarea>
                                     </div>
                                 </div>
                             </div>
