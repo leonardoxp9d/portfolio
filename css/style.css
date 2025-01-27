@@ -1016,3 +1016,33 @@ h3.my-profession {
     }
 
 }
+
+
+/*============ Thanks ============*/
+
+.content-thanks {
+    background-color: var(--bg-black-900);
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.content-thanks .message-thanks {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.content-thanks .message-thanks h1 {
+    font-size: 4rem;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+
+.content-thanks .thanks-img {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+}

@@ -436,17 +436,17 @@
 
                     <!--============ Contact Form ============-->
                     <div class="row">
-                        <form action="" class="contact-form padd-15">
+                        <form action="https://formsubmit.co/leonardo.sl.dev@gmail.com" method="POST"  class="contact-form padd-15" id="myForm">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nome">
+                                        <input type="text"  name="name" class="form-control" placeholder="Nome" required>
                                     </div>
                                 </div>
 
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="email" name="email" class="form-control" placeholder="Email" required>
                                     </div>
                                 </div>
                             </div>
@@ -454,7 +454,7 @@
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Assunto">
+                                        <input type="text" name="subject" class="form-control" placeholder="Assunto" required>
                                     </div>
                                 </div>
                             </div>
@@ -462,7 +462,7 @@
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="" id="" placeholder="Mensagem"></textarea>
+                                        <textarea class="form-control" name="message" qid="" placeholder="Mensagem" required></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -472,9 +472,13 @@
                                     <button type="submit" class="btn">Enviar</button>
                                 </div>
                             </div>
+                            <input type="hidden" name="_subject" value="Novo Contato!">
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://leonardoxp9d.github.io/portfolio/thanks.html">
+
                         </form>
                     </div>
-                    <!--============ Contact form end ============-->
                 </div>
             </section>
             <!--============ Contact Section End ============-->    
