@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skins/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style-switcher.css">
-
+    
      <!--============ Style SWitcher ============-->
      <link rel="stylesheet" href="./css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
      <link rel="stylesheet" href="./css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
      <link rel="stylesheet" href="./css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
      <link rel="stylesheet" href="./css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
      <link rel="stylesheet" href="./css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+     <link rel="stylesheet" href="./css/skins/color-6.css" class="alternate-style" title="color-6" disabled>
      <link rel="stylesheet" href="./css/style-switcher.css">
 </head>
 <body>
@@ -67,7 +67,7 @@
         <!--============ Main Content Start ============-->
         <div class="main-content">
             <!--============ Home Section Start ============-->
-            <section class="home active section" id="home">
+            <section class="home active section hidden" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -110,7 +110,7 @@
                         </div>
 
                         <div class="home-img padd-15">
-                            <img src="./images/profile2.png" alt="profile-picture">
+                            <img src="./images/profile/profile2.png" alt="profile-picture">
                         </div>
                     </div>
                 </div>
@@ -118,13 +118,14 @@
             <!--============ Home Section End ============-->
             
             <!--============ About Section Start ============-->
-            <section class="about section" id="about">
+            <section class="about section hidden" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
                             <h2>Sobre</h2>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="about-content padd-15">
                             <div class="row">
@@ -220,8 +221,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                
+                                </div>                                
                                 <!--
                                 <div class="experience padd-15">
                                     <h3 class="title">Experience</h3>
@@ -273,21 +273,150 @@
             <!--============ About Section End ============-->
 
             <!--============ Project Section Start ============-->
-            <section class="project section" id="project">
+            <section class="project section " id="project">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
                             <h2>Projetos</h2>
                         </div>
                     </div>
+                    
+                    <div class="row project-container padd-15">
+                        <div class="project-item" >
+                            <div class="project-title">
+                                <img src="/images/project/project1-logo.png" alt="project1 logo" class="logo">
+                                <h2 class="title">Fitclub</h2>
+                            </div>
+                            <div class="project-img">
+                                <img class="project-mobile" src="/images/project/project1-mobile.png" alt="#">
 
-                    <div class="row">
-                        <div class="project-heading padd-15">
-                            <h2>Meus ultímos projetos: </h2>
+                                <img class="desktop" src="/images/project/notebook.png" alt="#">
+                                <div class="project-desktop project-desktop-1"></div>
+                            </div>
+                            
+                            <div class="project-info">
+                                <p>
+                                    Projeto front-end responsivo de um site para uma academia, com foco em design moderno, interatividade e funcionalidade. 
+                                                                       
+                                </p>
+                                <p>
+                                    O projeto foi desenvolvido utilizando <span>ReactJS</span> para uma estruturação dinâmica e eficiente, <span>CSS</span> para estilização personalizada, <span>Framer Motion</span> para animações suaves e interativas, e a biblioteca <span>EmailJS</span> para envio de e-mails diretamente pelo site. O resultado é uma aplicação visualmente atraente, otimizada para diversos dispositivos.  
+                                </p>
+        
+                                <div class="container-btn first-project">
+                                    <a target="_blank" class="btn" href="https://fitclub-update.vercel.app">
+                                        Deploy 
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                    <a target="_blank" class="btn" href="https://github.com/leonardoxp9d/fitclub-update">
+                                        GitHub
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>                
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <!-- Projects items -->
+                        
+                        <div class="project-item" >
+                            <div class="project-title">
+                                <img src="/images/project/project2-logo.png" alt="project1 logo" class="logo">
+                                <h2 class="title">Carland</h2>
+                            </div>
+                            <div class="project-img">
+                                <img class="project-mobile" src="/images/project/project2-mobile.png" alt="#">
+
+                                <img class="desktop" src="/images/project/notebook.png" alt="#">
+                                <div class="project-desktop project-desktop-2"></div>
+                            </div>
+                            
+                            <div class="project-info">                               
+                                <p>
+                                    Desenvolvimento de um site moderno e responsivo para um serviço de aluguel de carros, com foco em desempenho, usabilidade e internacionalização. 
+                                </p>
+                                
+                                <p>
+                                    O projeto foi construído utilizando <span>NextJS</span> para renderização otimizada e navegação eficiente,<span>Tailwind CSS</span> para estilização ágil e consistente, <span>Framer Motion</span> para animações interativas e suaves, e a biblioteca <span>next-intl</span>  para implementar suporte a múltiplos idiomas, proporcionando uma experiência personalizada para diferentes públicos. O resultado é uma aplicação elegante, funcional e adaptada a diferentes
+                                     dispositivos e mercados.  
+                                </p>
+                                <div class="container-btn first-project">
+                                    <a target="_blank" class="btn" href="https://carland-ten.vercel.app">
+                                        Deploy 
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                    <a target="_blank" class="btn" href="https://github.com/leonardoxp9d/carland">
+                                        GitHub
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>                
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-item" >
+                            <div class="project-title">                                
+                                <img src="/images/project/project3-logo.png" alt="project1 logo" class="logo">
+                                <h2 class="title">
+                                    Construct
+                                </h2>
+                            </div>
+                            <div class="project-img">
+                                <img class="project-mobile" src="/images/project/project3-mobile.png" alt="#">
+
+                                <img class="desktop" src="/images/project/notebook.png" alt="#">
+                                <div class="project-desktop project-desktop-3"></div>
+                            </div>
+                            
+                            <div class="project-info">
+                                <p>
+                                    Projeto front-end que consiste em um site uma empresa de construção civil. 
+                                </p>
+                                <p>
+                                    Foi desenvolvido utilizando <span>HTML</span>, <span>CSS</span> e <span>Javascript</span>, possui responsividade projetado para se ajustar perfeitamente a diferentes dispositivos, garantindo uma navegação fluida e intuitiva.
+                                </p>
+        
+                                <div class="container-btn first-project">
+                                    <a target="_blank" class="btn" href="https://leonardoxp9d.github.io/construct">
+                                        Deploy 
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                    <a target="_blank" class="btn" href="https://github.com/leonardoxp9d/construct">
+                                        GitHub
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>                
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-item" >
+                            <div class="project-title">
+                                <img class="logo project4-logo" src="/images/project/project4-logo.png" alt="project4 logo"/>
+                                <h2 class="title">Coffee Shop</h2>
+                            </div>
+                            <div class="project-img">
+                                <img class="project-mobile" src="/images/project/project4-mobile.png" alt="#">
+
+                                <img class="desktop" src="/images/project/notebook.png" alt="#">
+                                <div class="project-desktop project-desktop-4"></div>
+                            </div>
+                            
+                            <div class="project-info">                              
+                                <p>
+                                    Desenvolvimento de um site responsivo para uma cafeteria, com foco em um design acolhedor, navegação intuitiva e compatibilidade com diferentes dispositivos. 
+                                </p>
+                                <p>
+                                    O projeto foi desenvolvido utilizando <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. O resultado é um site moderno e funcional, que transmite a essência da marca.
+                                </p>
+        
+                                <div class="container-btn first-project">
+                                    <a target="_blank" class="btn" href="https://leonardoxp9d.github.io/coffee-shop/">
+                                        Deploy 
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                    <a target="_blank" class="btn" href="https://github.com/leonardoxp9d/coffee-shop">
+                                        GitHub
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>                
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -415,6 +544,7 @@
             <span class="color-3" onclick="setActiveStyle('color-3')"></span>
             <span class="color-4" onclick="setActiveStyle('color-4')"></span>
             <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            <span class="color-6" onclick="setActiveStyle('color-6')"></span>
         </div>
     </div>
     <!--============ Style Switcher End ============-->
