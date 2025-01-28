@@ -1,10 +1,16 @@
 /*============ Toggle style switcher ============*/
-const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
+const menuStyleSwitcher = document.querySelector(".style-switcher"),
+      styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
+
+document.addEventListener("click", (event) => {
+    if (!menuStyleSwitcher.contains(event.target)) {
+        menuStyleSwitcher.classList.remove("open");
+    }
+});
 
 styleSwitcherToggle.addEventListener("click", () => {
-    document.querySelector(".style-switcher").classList.toggle("open");
+    menuStyleSwitcher.classList.toggle("open");
 })
-
 
 /*============ hide style switcher on  scroll  ============*/
 window.addEventListener("scroll", () => {

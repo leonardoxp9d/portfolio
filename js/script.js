@@ -13,6 +13,27 @@ const nav = document.querySelector(".nav"),
       allSection = document.querySelectorAll(".section"),
       totalSection = allSection.length;
 
+document.addEventListener("click", (event) => {
+    // Verifica se o clique foi fora do menu
+    if (!aside.contains(event.target)) {
+        aside.classList.remove("open");
+        navTogglerBtn.classList.remove("open");
+    }
+});
+
+const navTogglerBtn = document.querySelector(".nav-toggler"),
+      aside = document.querySelector(".aside");
+
+navTogglerBtn.addEventListener("click", () => {
+    asideSectionTogglerBtn();
+})
+
+function asideSectionTogglerBtn() { 
+    aside.classList.toggle("open");
+    navTogglerBtn.classList.toggle("open");
+}
+    
+
 for(let i=0; i<totalNavList; i++){
     const a = navList[i].querySelector("a");
     a.addEventListener("click", function(){
@@ -58,6 +79,7 @@ function updateNav(element) {
         }
     }
 }
+
 document.querySelector(".hire-me").addEventListener("click", function(){
     const sectionIndex = this.getAttribute("data-section-index");
     showSection(this);
@@ -74,14 +96,3 @@ document.querySelector(".btn-about").addEventListener("click", function(){
     addBackSection(sectionIndex);
 });
 
-const navTogglerBtn = document.querySelector(".nav-toggler"),
-      aside = document.querySelector(".aside");
-
-navTogglerBtn.addEventListener("click", () => {
-    asideSectionTogglerBtn();
-})
-
-function asideSectionTogglerBtn() { 
-    aside.classList.toggle("open");
-    navTogglerBtn.classList.toggle("open");
-}

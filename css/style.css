@@ -287,6 +287,10 @@ ul {
     transition: all 0.3s ease;
 }
 
+.aside .nav-toggler:hover {
+    filter: brightness(.7);
+}
+
 .aside .nav-toggler span {
     height: .2rem;
     width: 1.8rem;
@@ -390,7 +394,7 @@ h3.my-profession {
 }
 
 .home-info p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--text-black-700);
 }
 
@@ -431,42 +435,77 @@ h3.my-profession {
 .home-info .home-button {
     display: flex;
     gap: 4rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
-.home .home-img {
+/*============ home-img ============*/
+.home .home-img { /* home__img-wrapper*/
     flex: 0 0 40%;
     max-width: 40%;
     text-align: center;
     position: relative;
 }
 
-.home-img::after {
+.home .home-img::before,
+.home .home-img::after {
     content: '';
     position: absolute;
-    height: 8rem;
-    width: 8rem;
-    border-bottom: 1rem solid var(--skin-color);
-    border-right: 1rem solid var(--skin-color);
-    right: 2rem;
-    bottom: -4rem;
+    inset: 0;
 }
 
-.home-img::before {
-    content: '';
-    position: absolute;
-    height: 8rem;
-    width: 8rem;
-    border-top: 1rem solid var(--skin-color);
-    border-left: 1rem solid var(--skin-color);
-    left: -2rem;
-    top: -4rem;
+.home .home-img::before {
+    background-color: var(--skin-color);
+    filter: brightness(1.2);
+    animation: animate__before 8s ease-in-out infinite;
 }
- 
-.home .home-img img {
+
+
+.home .home-img::after {
+    background-color: var(--skin-color);
+}
+
+
+.home .home-img::after {
+    animation: animate__after 7s ease-in-out infinite;
+}
+
+.home .home-img img { 
+    margin-top: 2rem;
     height: 40rem;
-    margin: auto;
-    border-radius: .5rem;
+    z-index: 10;
+    position: relative;
+    vertical-align: middle;
+    /*margin: auto;*/
+    /*
+    border-radius: .5rem;*/
+}
+
+@keyframes animate__before {
+    0% {
+        border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+    }
+
+    50% {
+        border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+    }
+
+    100% {
+        border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+    }
+}
+
+@keyframes animate__after {
+    0% {
+        border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+    }
+
+    50% {
+        border-radius: 65% 35% 29% 71% / 55% 30% 70% 45%;
+    }
+
+    100% {
+        border-radius: 21% 79% 50% 50% / 21% 50% 50% 79%;
+    }
 }
 
 /*============ About ============*/
@@ -971,12 +1010,14 @@ h3.my-profession {
     .section .container {
         padding-top: 7rem;
     }
+    
     .aside {
         left: -27rem;
     }
 
     .aside.open {
         left: 0;
+
     }
     
     .aside .nav-toggler {
@@ -995,6 +1036,7 @@ h3.my-profession {
     .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0;
+
     }
 }
 
@@ -1004,13 +1046,25 @@ h3.my-profession {
         max-width: 50%;    
     }
 
-    .home .home-info {
+    .home .container .row { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .home .container .row .home-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
 
-    .home .home-img {
-        display: none;
+    .home .home-img::before,
+    .home .home-img::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        width: 40rem;
+        left: -8rem;
     }
 } 
 
@@ -1039,6 +1093,25 @@ h3.my-profession {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    h3.hello {
+        font-size: 3rem;
+    }
+    
+    h3.hello span {
+        font-size: 4.5rem;
+        display: block;
+    }
+
+    h3.my-profession {
+        font-size: 3.7rem;
+    }
+
+    .home-info .home-button {
+        display: flex;
+        gap: 4rem;
+        margin-top: 3rem;
+    }
+
     .project .project-item .project-img .desktop {
         width: 45rem;
     }
@@ -1054,6 +1127,36 @@ h3.my-profession {
     .btn { 
         font-size: 1.5rem;
         padding: 1rem 2rem; 
+    }
+
+    h3.hello {
+        font-size: 3rem;
+        font-size: 2.2rem;
+    }
+    
+    h3.hello span {
+        font-size: 4.5rem;
+        font-size: 3.2rem;
+        display: block;
+    }
+
+    h3.my-profession {
+        font-size: 3.7rem;
+        font-size: 2.3rem;
+    }   
+
+    .home .home-img img { 
+        height: 30rem;
+        margin-left: -4rem;
+    }
+
+    .home .home-img::before,
+    .home .home-img::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        width: 30rem;
+        left: -8rem;
     }
 
     .project .project-item .project-img .desktop {

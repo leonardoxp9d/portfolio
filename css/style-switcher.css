@@ -9,12 +9,14 @@
     border-radius: 2rem;
     background: var(--bg-input);
     z-index: 101;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     transform: translateX(100%);
 } 
 
+
 .style-switcher.open {
     transform: translateX(-2.5rem);
+    transition: all 0.3s ease-in-out;
 }
 
 .style-switcher .s-icon {
@@ -35,6 +37,11 @@
     /*
     background: var(--bg-black-100);
     */
+    
+}
+
+.style-switcher .s-icon:hover {
+    filter: brightness(.7);
 }
 
 .style-switcher .s-icon i {
