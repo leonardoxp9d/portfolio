@@ -8,7 +8,7 @@
     border: .1rem solid var(--bg-black-50);
     border-radius: 2rem;
     background: var(--bg-input);
-    z-index: 101;
+    z-index: 10;
     transition: all 0.3s ease-in-out;
     transform: translateX(100%);
 } 
@@ -33,7 +33,6 @@
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 50%;
-
     /*
     background: var(--bg-black-100);
     */

@@ -8,20 +8,28 @@
     <title>Portfólio</title>
 
     <!--============ CSS FILES ============-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/skins/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style-preloader.css">
     
      <!--============ Style SWitcher ============-->
-     <link rel="stylesheet" href="./css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
-     <link rel="stylesheet" href="./css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
-     <link rel="stylesheet" href="./css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
-     <link rel="stylesheet" href="./css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
-     <link rel="stylesheet" href="./css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
-     <link rel="stylesheet" href="./css/skins/color-6.css" class="alternate-style" title="color-6" disabled>
-     <link rel="stylesheet" href="./css/style-switcher.css">
+     <link rel="stylesheet" href="assets/css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+     <link rel="stylesheet" href="assets/css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+     <link rel="stylesheet" href="assets/css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+     <link rel="stylesheet" href="assets/css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+     <link rel="stylesheet" href="assets/css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+     <link rel="stylesheet" href="assets/css/skins/color-6.css" class="alternate-style" title="color-6" disabled>
+     <link rel="stylesheet" href="assets/css/style-switcher.css">
+
 </head>
 <body>
+    <!--============ Preloader Start ============-->
+    <div class="preloader" id="preloader">
+        <div class="loader" id="loader"></div>
+    </div>
+    <!--============ Preloader End ============-->
+
     <!--============ Main Container Start ============-->
     <div class="main-container">
         <!--============ Aside Start ============-->
@@ -101,13 +109,16 @@
                             </div>                               
 
                             <div class="home-button">
-                                <a href="#" class="btn">Download CV</a>
+                                <a href="https://drive.google.com/file/d/14Qy7rq90Bo3ZlOZq_jlGsdm23UbRWW8j/view?usp=sharing"  
+                                    class="btn" target="_blank" rel="noopener noreferrer">
+                                    Download CV
+                                </a>
                                 <a href="#about" data-section-index="0" class="btn btn-about">Sobre</a>
                             </div>                          
                         </div>
 
                         <div class="home-img padd-15">
-                            <img src="images/profile/profile.png" class alt="profile-picture" >
+                            <img src="assets/images/profile/profile.png" class alt="profile-picture" >
                         </div>
                     </div>
                 </div>
@@ -238,13 +249,13 @@
                     <div class="row project-container padd-15">
                         <div class="project-item" >
                             <div class="project-title">
-                                <img src="images/project/project1-logo.png" alt="project1 logo" class="logo">
+                                <img src="assets/images/project/project1-logo.png" alt="project1 logo" class="logo">
                                 <h2 class="title">Fitclub</h2>
                             </div>
                             <div class="project-img">
-                                <img class="project-mobile" src="images/project/project1-mobile.png" alt="#">
+                                <img class="project-mobile" src="assets/images/project/project1-mobile.png" alt="#">
 
-                                <img class="desktop" src="images/project/notebook.png" alt="#">
+                                <img class="desktop" src="assets/images/project/notebook.png" alt="#">
                                 <div class="project-desktop project-desktop-1"></div>
                             </div>
                             
@@ -272,13 +283,13 @@
                         
                         <div class="project-item" >
                             <div class="project-title">
-                                <img src="images/project/project2-logo.png" alt="project1 logo" class="logo">
+                                <img src="assets/images/project/project2-logo.png" alt="project1 logo" class="logo">
                                 <h2 class="title">Carland</h2>
                             </div>
                             <div class="project-img">
-                                <img class="project-mobile" src="images/project/project2-mobile.png" alt="#">
+                                <img class="project-mobile" src="assets/images/project/project2-mobile.png" alt="#">
 
-                                <img class="desktop" src="images/project/notebook.png" alt="#">
+                                <img class="desktop" src="assets/images/project/notebook.png" alt="#">
                                 <div class="project-desktop project-desktop-2"></div>
                             </div>
                             
@@ -306,15 +317,15 @@
 
                         <div class="project-item" >
                             <div class="project-title">                                
-                                <img src="images/project/project3-logo.png" alt="project1 logo" class="logo">
+                                <img src="assets/images/project/project3-logo.png" alt="project1 logo" class="logo">
                                 <h2 class="title">
                                     Construct
                                 </h2>
                             </div>
                             <div class="project-img">
-                                <img class="project-mobile" src="images/project/project3-mobile.png" alt="#">
+                                <img class="project-mobile" src="assets/images/project/project3-mobile.png" alt="#">
 
-                                <img class="desktop" src="images/project/notebook.png" alt="#">
+                                <img class="desktop" src="assets/images/project/notebook.png" alt="#">
                                 <div class="project-desktop project-desktop-3"></div>
                             </div>
                             
@@ -341,13 +352,13 @@
 
                         <div class="project-item" >
                             <div class="project-title">
-                                <img class="logo project4-logo" src="images/project/project4-logo.png" alt="project4 logo"/>
+                                <img class="logo project4-logo" src="assets/images/project/project4-logo.png" alt="project4 logo"/>
                                 <h2 class="title">Coffee Shop</h2>
                             </div>
                             <div class="project-img">
-                                <img class="project-mobile" src="images/project/project4-mobile.png" alt="#">
+                                <img class="project-mobile" src="assets/images/project/project4-mobile.png" alt="#">
 
-                                <img class="desktop" src="images/project/notebook.png" alt="#">
+                                <img class="desktop" src="assets/images/project/notebook.png" alt="#">
                                 <div class="project-desktop project-desktop-4"></div>
                             </div>
                             
@@ -521,7 +532,8 @@
 
     <!--============ JS FILES ============-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/style-switcher.js"></script>
-    <script src="js/script.js"></script>
+    <script src="assets/js/style-switcher.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script-preloader.js" ></script>
 </body>
 </html>
