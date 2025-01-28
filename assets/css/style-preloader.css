@@ -19,7 +19,7 @@
 	left: 50%;
 	margin-top: -60px;
 	margin-left: -60px;
-	animation: spin 4.35s linear infinite;
+	animation: spin 2.35s linear infinite;
 }
 
 @keyframes spin {
