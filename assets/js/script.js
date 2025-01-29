@@ -38,6 +38,9 @@ for(let i=0; i<totalNavList; i++){
     const a = navList[i].querySelector("a");
     a.addEventListener("click", function(){
         removeBackSection();
+        /*
+        aside.classList.remove("open");
+        navTogglerBtn.classList.remove("open");*/
         
         for(let j=0; j<totalNavList; j++){
             if(navList[j].querySelector("a").classList.contains("active")){
