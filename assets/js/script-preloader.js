@@ -4,4 +4,4 @@ const preloader = document.getElementById("preloader"),
 setTimeout (function() {
   preloader.classList.remove("preloader");
   loader.classList.remove("loader");
-}, 2180);
+}, 3180);
