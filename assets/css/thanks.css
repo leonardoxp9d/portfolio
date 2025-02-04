@@ -1,8 +1,8 @@
 /*============ Thanks ============*/
 .content-thanks {
     background-color: var(--bg-black-900);
-    min-width: 100vh;
-    min-height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 .content-thanks .message-thanks {
@@ -13,15 +13,29 @@
     justify-content: center;
     gap: 3rem;
 }
+
 .content-thanks .message-thanks h1 {
     font-size: 4rem;
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
+    text-align: center;
 }
 
 .content-thanks .thanks-img {
     width: 35rem;
     height: 35rem;
     border-radius: 50%;
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+    .content-thanks .message-thanks h1 {
+        font-size: 3rem;
+    }
+
+    .content-thanks .thanks-img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+    }
 }

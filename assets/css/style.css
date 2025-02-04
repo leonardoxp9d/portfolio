@@ -353,7 +353,7 @@ h3.my-profession {
 }
 
 /*============ home-img ============*/
-.home .home-img { /* home__img-wrapper*/
+.home .home-img {
     flex: 0 0 40%;
     max-width: 40%;
     text-align: center;
