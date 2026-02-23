@@ -14,7 +14,7 @@ const nav = document.querySelector(".nav"),
       totalSection = allSection.length;
 
 document.addEventListener("click", (event) => {
-    // Verifica se o clique foi fora do menu
+    // se o clique foi fora do menu, fecha o menu
     if (!aside.contains(event.target)) {
         aside.classList.remove("open");
         navTogglerBtn.classList.remove("open");
@@ -38,10 +38,6 @@ for(let i=0; i<totalNavList; i++){
     const a = navList[i].querySelector("a");
     a.addEventListener("click", function(){
         removeBackSection();
-        /*
-        aside.classList.remove("open");
-        navTogglerBtn.classList.remove("open");*/
-        
         for(let j=0; j<totalNavList; j++){
             if(navList[j].querySelector("a").classList.contains("active")){
                 addBackSection(j);
