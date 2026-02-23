@@ -9,16 +9,16 @@
 }
   
 .loader {
-	border: 16px solid var(--bg-shape);
-	border-top: 16px solid var(--skin-color) ;
+	border: 1.6rem solid var(--bg-shape);
+	border-top: 1.6rem solid var(--skin-color) ;
 	border-radius: 50%;
-	width: 120px;
-	height: 120px;
+	width: 12rem;
+	height: 12rem;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -60px;
-	margin-left: -60px;
+	margin-top: -6.0rem;
+	margin-left: -6.0rem;
 	animation: spin 3.35s linear infinite;
 }
 

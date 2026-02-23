@@ -100,6 +100,7 @@
     margin-left: -1.5rem;
     margin-right: -1.5rem;
     position: relative;
+    justify-content: center;
 }
 
 .btn {
@@ -690,14 +691,6 @@ h3.my-profession {
     z-index: 1;
     cursor: pointer;
     transition: 5s; 
-
-    /*
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    object-position: top left;
-    width: 360px;
-    height: 660px;
-    */
 }
 
 .project .project-item .project-img .project-desktop:hover {
@@ -743,10 +736,6 @@ h3.my-profession {
     justify-content: start;
     align-items: start;
     gap: 1.5rem;
-    
-    /*
-    width: 600px;
-    max-width: 100%;*/
 }
 
 .project .project-item div p {
@@ -804,7 +793,7 @@ h3.my-profession {
 
 .contact .contact-item .contact-item-inner {
     background: var(--bg-black-100);
-    border: 1px solid var(--bg-black-50);
+    border: .1rem solid var(--bg-black-50);
     border-radius: 2rem;
     padding: 3rem 1.5rem;
     text-align: center;
@@ -857,17 +846,17 @@ h3.my-profession {
 
 
 .contact .contact-item .contact-item-inner h4 {
-    font-size: 16px;
-    margin-bottom: 15px;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
     color: var(--text-black-900);
     font-weight: 700;
     text-transform: capitalize;
 }
 
 .contact .contact-item .contact-item-inner p {
-    font-size: 15px;
+    font-size: 1.2rem;
     color: var(--text-black-700);
-    line-height: 20px;
+    line-height: 2rem;
 }
 
 /*============ Contact Form ============*/
@@ -951,6 +940,13 @@ h3.my-profession {
         display: block;
         margin-left: 0;
 
+    }
+}
+
+@media (max-width: 1262px) {
+    .contact .contact-item {
+        flex: 0 0 50%;
+        max-width: 50%;    
     }
 }
 
